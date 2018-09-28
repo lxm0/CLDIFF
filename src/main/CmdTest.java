@@ -26,13 +26,14 @@ public class CmdTest implements IHandleCommit {
     Meta meta;
 
     public static void main(String args[]){
+        int i=0;
         CmdTest cmdTest = new CmdTest();
         cmdTest.run();
 
     }
 
     public void run(){
-        String repo = "your/selected/git/repo/path";
+        String repo = "F:\\IntelliJ IDEA\\CLDIFF";
         String commitId = "commitId";
         String outputDir = "outputDir";
         jGitHelper = new JGitHelper(repo);
