@@ -33,9 +33,9 @@ public class CmdTest implements IHandleCommit {
     }
 
     public void run(){
-        String repo = "F:\\IntelliJ IDEA\\CLDIFF";
-        String commitId = "commitId";
-        String outputDir = "outputDir";
+        String repo = "F:\\IntelliJ IDEA\\CLDIFF\\.git";
+        String commitId = "6c1105a5402926b4be45dc3037acb9a9ea646357";
+        String outputDir = "F:\\IntelliJ IDEA\\outputCLDIFF";
         jGitHelper = new JGitHelper(repo);
         initMeta(repo,commitId,outputDir);
         jGitHelper.analyzeOneCommit(this,commitId);
@@ -55,8 +55,8 @@ public class CmdTest implements IHandleCommit {
         meta.setCommit_log(null);
         meta.setCommitter(null);
         meta.setDate_time(null);
-        meta.setOutputDir(outputDir+'/'+PathUtil.getGitProjectNameFromGitFullPath(repo)+'/'+commitId);
-        meta.setLinkPath(meta.getOutputDir()+"/link.json");
+        meta.setOutputDir(outputDir+'\\'+PathUtil.getGitProjectNameFromGitFullPath(repo)+'\\'+commitId);
+        meta.setLinkPath(meta.getOutputDir()+"\\link.json");
         Global.mmeta = meta;
 
     }
