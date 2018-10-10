@@ -33,7 +33,7 @@ public class CmdTest implements IHandleCommit {
 
     public void run(){
         String repo = "F:\\IntelliJ IDEA\\ClDIFF";
-        String commitId = "commitId";
+        String commitId = "  ";
         String outputDir = "F:\\IntelliJ IDEA\\ClDIFF\\Test";
 
         jGitHelper = new JGitHelper(repo);
