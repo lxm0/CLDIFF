@@ -10,13 +10,11 @@ import edu.fdu.se.base.miningactions.bean.MiningActionData;
 import edu.fdu.se.base.miningchangeentity.ChangeEntityData;
 import edu.fdu.se.base.miningchangeentity.ChangeEntityPreprocess;
 import edu.fdu.se.base.miningchangeentity.base.ChangeEntityDesc;
-import edu.fdu.se.base.preprocessingfile.FilePairPreDiff;
 import edu.fdu.se.base.preprocessingfile.AddOrRemoveFileProcessing;
+import edu.fdu.se.base.preprocessingfile.FilePairPreDiff;
 import edu.fdu.se.base.preprocessingfile.data.FileOutputLog;
 import edu.fdu.se.base.preprocessingfile.data.PreprocessedData;
 import edu.fdu.se.base.webapi.GenerateChangeEntityJson;
-import edu.fdu.se.config.ProjectProperties;
-import edu.fdu.se.config.PropertyKeys;
 
 /**
  * Created by huangkaifeng on 2018/2/27.
